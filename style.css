@@ -1,2 +1,77 @@
 .preloader { display: none }
 #container.fetching .preloader{ display: block }
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    background-color: #222222;
+}
+
+body {
+    color: #ffffff;
+    font-family: sans-serif;
+    font-size: 16pt;
+}
+
+.content {
+    margin-top: 120px;
+    text-align: center;
+}
+
+button {
+    margin: 15px 10px 0;
+    padding: 10px 20px;
+    box-shadow: 1px 0 2px;
+    background-color: #f4f4f4;
+    border-radius: 4px;
+    border: none;
+    box-shadow: 1px 0 2px #ffffff;
+}
+
+button strong {
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    color: #555555;
+}
+
+button:disabled {
+    opacity: 0.6;
+}
+
+button span {
+    display: block;
+    margin-top: 5px;
+}
+
+ul#result {
+    list-style: none;
+    margin: 50px 10px;
+    padding-top: 20px;
+}
+
+ul#result li {
+    background-color: #f4f3f4;
+    display: inline-block;
+    max-width: 350px;
+    margin: 20px;
+    border: 1px solid #dddddd;
+    padding: 8px;
+    border-radius: 8px;
+    box-shadow: 0 0 3px #808080;
+}
+
+ul#result li img {
+    width: 100%;
+    border-radius: 4px;
+}
+
+ul#result li span {
+    font-size: 16px;
+    color: #444444;
+}

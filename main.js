@@ -33,4 +33,19 @@ function setNasa (nasaItems, listId) {
   /*
     * Manipule o DOM para montar a sua lista de imagens da NASA
   */
+  nasaItems.map(item => {
+    var listItem = document.createElement('li');
+
+    var image = document.createElement('img');
+    image.setAttribute('src', item.href);
+    image.setAttribute('alt', item.title);
+
+    var title = document.createElement('span');
+    title.textContent = item.title;
+
+    listItem.appendChild(image);
+    listItem.appendChild(title);
+    
+    document.getElementById(listId).appendChild(listItem);
+  });
 }

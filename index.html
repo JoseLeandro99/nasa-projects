@@ -9,11 +9,20 @@
   <div id="container">
     <div class="content">
       <p>Abra o console do seu browser (aperte f12)</p>
-      <button id="btn-mercury" type="button" onclick="getNasa('project-mercury', this)">mercury</button>
-      <button id="btn-gemini" type="button" onclick="getNasa('project-gemini', this)">gemini</button>
-      <button id="btn-apollo" type="button" onclick="getNasa('project-apollo', this)">apollo</button>
+      <button id="btn-mercury" type="button" onclick="getNasa('project-mercury', this)">
+        <strong>mercury</strong>
+        <span>1961 - 1963</span>
+      </button>
+      <button id="btn-gemini" type="button" onclick="getNasa('project-gemini', this)">
+        <strong>gemini</strong>
+        <span>1965 - 1966</span>
+      </button>
+      <button id="btn-apollo" type="button" onclick="getNasa('project-apollo', this)">
+        <strong>apollo</strong>
+        <span>1967 - 1972</span>
+      </button>
       <button id="btn-reset" type="button" onclick="resetButtons(['btn-mercury', 'btn-gemini', 'btn-apollo'], this)" disabled>reset</button>
-      <div class="preloader">Carregando...</div>
+      <div class="preloader">Carregando... </div>
       <ul id="result">
         <!-- Monte aqui a sua lista de imagens da NASA -->
       </ul>
